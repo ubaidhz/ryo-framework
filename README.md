@@ -1,2 +1,0 @@
-# ryo-framework
-Readme
