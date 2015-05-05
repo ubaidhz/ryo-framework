@@ -25,12 +25,11 @@ gulp.task ('scripts', function(){
 
 //Compass Sass Gulp Task to work on sass behind the scenes
 gulp.task('sass', function(){
-	return gulp.src('src/sass/styles.scss') //watches styles.scss from src folder
-	.pipe(sass({
+	return sass('src/sass/styles.scss', { //watches styles.scss from src folder
 		compass:true,
 		style: 'compressed' //compresses/minifies the output css
-	}))
-	.on('error', function(err){console.log(err.message)}) //Logs error message in console if it hits error in scss
+	})
+	.on('error', function(err) {console.log(err.message);}) //Logs error message in console if it hits error in scss
 	.pipe(gulp.dest('assets/css'))
 });
 
@@ -42,4 +41,4 @@ gulp.task('watch', function(){
 
 
 //Default task 
-gulp.task('default', ['lint', 'scripts', 'sass','watch']);
+gulp.task('default', ['lint', 'scripts','watch', 'sass']);
