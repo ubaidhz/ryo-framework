@@ -27,3 +27,6 @@ MIT
 # ryo-framework
 Readme
 
+Course material from 
+http://minus.nz/articles/bower-guide
+http://lib.minus.nz/html-css-snippets/responsive-navigation/
