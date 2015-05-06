@@ -26,19 +26,22 @@ A clean slate for a SASS setup. Demonstrating some variables, nesting and mixins
 4. Navigate to your project, `cd /your/project/directory`.
 5. Run Compass, `compass watch`.
 ##Gulpfile.js
-Changelog for gulp.task and creating functions for scripts, js lint, uglify (minifying js), and sass.
+Create functions/tasks for gulp.task and creating functions for scripts, js lint, uglify (minifying js), and sass.
+1. Navigate to your project `cd/your/projectfolder`
+2. Run NPM `npm install`
+3. Run gulp `gulp`. Alternatively run `gulp sass` `gulp watch` `gulp lint` `gulp scripts`
 
 //Include gulp node module
-var gulp = require ('gulp');
+`var gulp = require ('gulp');`
 
-//Include our plugins: pull jshint plugin, ruby-sass, and gulp-uglify for the project
-var jshint = require ('gulp-jshint');
-var sass = require ('gulp-ruby-sass');
-var uglify = require ('gulp-uglify');
+`//Include our plugins: pull jshint plugin, ruby-sass, and gulp-uglify for the project`
+`var jshint = require ('gulp-jshint');`
+`var sass = require ('gulp-ruby-sass');`
+`var uglify = require ('gulp-uglify');`
 
 #Default task
-//Default task 
-gulp.task('default', ['lint', 'scripts','watch', 'sass']);
+`//Default task `
+`gulp.task('default', ['lint', 'scripts','watch', 'sass']);`
 
 ## License
 
@@ -48,5 +51,5 @@ MIT
 Readme
 
 Course material from 
-http://minus.nz/articles/bower-guide
-http://lib.minus.nz/html-css-snippets/responsive-navigation/
+`http://minus.nz/articles/bower-guide`
+`http://lib.minus.nz/html-css-snippets/responsive-navigation/`
